@@ -17,6 +17,8 @@ namespace ASP.NetExample
             Label1.Text = "! You Clicked the button";
             Label1.ForeColor = System.Drawing.Color.Red;
             UserInput.ForeColor = System.Drawing.Color.Red;
+            ShowDate.Text = "You Birthday is:" + Calendar1.SelectedDate.ToString("D");
+            ShowDate.ForeColor = System.Drawing.Color.Blue;
         }
     }
 }
