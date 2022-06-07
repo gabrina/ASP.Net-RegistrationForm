@@ -15,6 +15,8 @@ namespace ASP.NetExample
             if (RadioButton1.Checked == true) tmp = "Mr."; else tmp = "Ms.";
             UserInput.Text = "Hi, " + tmp + UserName.Text;
             Label1.Text = "! You Clicked the button";
+            Label1.ForeColor = System.Drawing.Color.Red;
+            UserInput.ForeColor = System.Drawing.Color.Red;
         }
     }
 }

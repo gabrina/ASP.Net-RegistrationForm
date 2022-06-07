@@ -27,7 +27,9 @@
         </p>
         <br />
     </form>
+    <div>
     <asp:Label ID="UserInput" runat="server"></asp:Label>   <%-- showing userName, entered in the text box--%>
-    <asp:Label ID="Label1" runat="server"></asp:Label>
+    <asp:Label ID="Label1" runat="server" ></asp:Label>
+        </div>
 </body>
 </html>
