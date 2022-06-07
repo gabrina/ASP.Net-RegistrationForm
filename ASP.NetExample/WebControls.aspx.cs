@@ -9,9 +9,10 @@ namespace ASP.NetExample
 {
     public partial class WebControls : System.Web.UI.Page
     {
-        protected void Page_Load(object sender, EventArgs e)
+        protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            UserInput.Text = "Good day " + UserName.Text;
+            UserInput.Text = "Hi, " + UserName.Text;
+            Label1.Text = "! You Clicked the button";
         }
     }
 }
