@@ -28,13 +28,19 @@
             <br />
             <asp:Calendar ID="Calendar1" runat="server" SelectedDate="1998-09-23"></asp:Calendar>
         </div>
-        
+        <div>
+            <h2>select courses:
+            </h2>
+            <asp:CheckBox ID="CheckBox1" runat="server" Text="AP" />
+            <asp:CheckBox ID="CheckBox2" runat="server" Text="DS" />
+            <asp:CheckBox ID="CheckBox3" runat="server" Text="OS" />
+        </div>
         <p>
             <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
             <%--"OnClick" indicate the method to execute when button is clicked--%>
         </p>
         <br />
-        
+
     </form>
     <div>
         <asp:Label ID="UserInput" runat="server"></asp:Label>
@@ -42,9 +48,17 @@
         <asp:Label ID="Label1" runat="server"></asp:Label>
     </div>
 
+    <%--  <p>
+        <asp:Button ID="Button1" runat="server" Text="Button" OnClick="Button1_Click"/>
+    </p>--%>
+
 
     <p>
         <asp:Label ID="ShowDate" runat="server"></asp:Label>
+    </p>
+
+    <p>
+        <asp:Label ID="ShowCourses" runat="server"></asp:Label>
     </p>
 </body>
 </html>
