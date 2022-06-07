@@ -11,7 +11,9 @@ namespace ASP.NetExample
     {
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            UserInput.Text = "Hi, " + UserName.Text;
+            string tmp = "";
+            if (RadioButton1.Checked == true) tmp = "Mr."; else tmp = "Ms.";
+            UserInput.Text = "Hi, " + tmp + UserName.Text;
             Label1.Text = "! You Clicked the button";
         }
     }

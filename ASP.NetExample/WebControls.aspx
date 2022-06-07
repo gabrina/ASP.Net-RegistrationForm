@@ -11,6 +11,16 @@
         <div>
             <asp:Label ID="Labeled" runat="server">User Name</asp:Label>
             <asp:TextBox ID="UserName" runat="server" ToolTip="Enter User Name"></asp:TextBox> <%--"ToolTip" indicate what to show when user hover over it--%>
+            <p>
+            <asp:RadioButton ID="RadioButton1" 
+                GroupName="gender"
+                text="Male"
+                runat="server" />
+            <asp:RadioButton ID="RadioButton2" 
+                GroupName="gender" 
+                text="Female"
+                runat="server" />
+                </p>
         </div>
         <p>
             <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" /> <%--"OnClick" indicate the method to execute when button is clicked--%>
