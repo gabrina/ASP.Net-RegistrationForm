@@ -10,7 +10,9 @@
     <form id="form1" runat="server">
         <div>
             <h1>Hello World!</h1>
-            <asp:Label ID="Label1" Text="test" runat="server">TestLabel</asp:Label>
+            <asp:HyperLink ID="HyperLink1" 
+                runat="server" 
+                NavigateUrl="http://www.google.com">GOOGLE</asp:HyperLink><%--have to come with http://--%>
         </div>
     </form>
 </body>
