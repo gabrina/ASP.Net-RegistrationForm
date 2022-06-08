@@ -16,6 +16,8 @@ namespace ASP.NetExample
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
+            Result.Text = "Rsult";
+            Result.ForeColor = System.Drawing.Color.CadetBlue;
             string tmp = "";
             if (RadioButton1.Checked == true) tmp = "Mr."; else tmp = "Ms.";
             UserInput.Text = "Hi, " + tmp + UserName.Text;
@@ -34,8 +36,38 @@ namespace ASP.NetExample
             ShowCourses.Text = "Your courses are:" + message;
             ShowCourses.ForeColor = System.Drawing.Color.Olive;
 
+            //Action for file upload
+            if ((FileUpload1.PostedFile != null) && (FileUpload1.PostedFile.ContentLength > 0))
+            {
+                string FileName = System.IO.Path.GetFileName(FileUpload1.PostedFile.FileName);
+                string SaveLocation = Server.MapPath("upload") + "\\" + FileName;
+                try
+                {
+                    FileUpload1.PostedFile.SaveAs(SaveLocation);
+                    FileUploadStatus.Text = "Your image was successfully uploaded.";
+                }
+
+                catch (Exception ex)
+                {
+                    FileUploadStatus.Text = "Error: " + ex.Message;
+                }
+            }
+            else
+            {
+                FileUploadStatus.Text = "Please select a file to upload:";
+            }
         }
+
+        protected void LinkButton1_Click(object sender, EventArgs e)
+        {
+            Label4.Text = "Image should be less than 4MB.\n Image should have a white background\nImage should be clear enough";
+        }
+
+        protected System.Web.UI.HtmlControls.HtmlInputFile File1;
+        protected System.Web.UI.HtmlControls.HtmlInputButton Submit1;
+        
+
     }
 
-   
+
 }
