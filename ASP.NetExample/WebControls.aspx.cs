@@ -27,9 +27,9 @@ namespace ASP.NetExample
 
             //for check boxes
             var message = "";
-            if (CheckBox1.Checked) message = CheckBox1.Text + "";
-            if (CheckBox2.Checked) message += CheckBox2.Text + "";
-            if (CheckBox3.Checked) message += CheckBox3.Text + "";
+            if (CheckBox1.Checked) message = CheckBox1.Text + " ";
+            if (CheckBox2.Checked) message += CheckBox2.Text + " ";
+            if (CheckBox3.Checked) message += CheckBox3.Text;
 
             ShowCourses.Text = "Your courses are:" + message;
             ShowCourses.ForeColor = System.Drawing.Color.Olive;
