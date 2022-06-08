@@ -30,7 +30,7 @@ namespace ASP.NetExample
             if (CheckBox1.Checked) message = CheckBox1.Text + " ";
             if (CheckBox2.Checked) message += CheckBox2.Text + " ";
             if (CheckBox3.Checked) message += CheckBox3.Text;
-
+            if (message == "") message = "None!";
             ShowCourses.Text = "Your courses are:" + message;
             ShowCourses.ForeColor = System.Drawing.Color.Olive;
 

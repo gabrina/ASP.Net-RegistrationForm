@@ -7,6 +7,7 @@
     <title></title>
 </head>
 <body>
+    <h2 style="color:darkred">Registration Form</h2>
     <form id="form1" runat="server">
         <div>
             <asp:Label ID="Labeled" runat="server">User Name</asp:Label>
@@ -26,7 +27,14 @@
         <div>
             <asp:Label ID="Label2" runat="server" Text="Enter Your Birthday:"></asp:Label>
             <br />
-            <asp:Calendar ID="Calendar1" runat="server" SelectedDate="1998-09-23"></asp:Calendar>
+            <asp:Calendar ID="Calendar1" runat="server" SelectedDate="1998-09-23" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
+                <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                <NextPrevStyle Font-Bold="True" Font-Size="8pt" ForeColor="#333333" VerticalAlign="Bottom" />
+                <OtherMonthDayStyle ForeColor="#999999" />
+                <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                <TitleStyle BackColor="White" BorderColor="Black" BorderWidth="4px" Font-Bold="True" Font-Size="12pt" ForeColor="#333399" />
+                <TodayDayStyle BackColor="#CCCCCC" />
+            </asp:Calendar>
         </div>
         <div>
             <h2>select courses:
