@@ -60,7 +60,7 @@ namespace ASP.NetExample
 
         protected void LinkButton1_Click(object sender, EventArgs e)
         {
-            Label4.Text = "Image should be less than 4MB.\n Image should have a white background\nImage should be clear enough";
+            Label4.Text = "Image should be less than 4MB." + "<br />" + "Image should have a white background" + "<br />" + "Image should be clear enough" + " <br /> ";
         }
 
         protected System.Web.UI.HtmlControls.HtmlInputFile File1;

@@ -49,8 +49,7 @@
 
         <%--get courses, usage of check boxs--%>
         <div>
-            <h2>select courses:
-            </h2>
+            select courses:
             <asp:CheckBox ID="CheckBox1" runat="server" Text="AP" />
             <asp:CheckBox ID="CheckBox2" runat="server" Text="DS" />
             <asp:CheckBox ID="CheckBox3" runat="server" Text="OS" />
@@ -61,8 +60,9 @@
 
         <%--fill upload--%>
         <div>
-            <asp:Label ID="Label3" runat="server" Text="Add an imag of you:"></asp:Label>
-            <hr />
+            <asp:Label ID="Label3" runat="server" Text="Add an image of you:"></asp:Label>
+            <br />
+            <br />
             <asp:LinkButton ID="LinkButton1" runat="server" ForeColor="Cyan" OnClick="LinkButton1_Click">Rules of file Upload</asp:LinkButton><br />
             <asp:Label ID="Label4" runat="server"></asp:Label><br />
             <asp:FileUpload ID="FileUpload1" runat="server" />
@@ -74,31 +74,28 @@
             <asp:Button ID="UploadButton" runat="server" Text="UploadFile" OnClick="FileUpload" />
         </p>--%>
 
+        <asp:HyperLink ID="MultipleFilesUploadLink" runat="server" NavigateUrl="UploadMultiplFiles.aspx">Need to upload more files?</asp:HyperLink>
 
         <p>
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" OnClick="SubmitButton_Click" />
+            <asp:Button ID="SubmitButton" runat="server" Text="Submit" BackColor="#33cc33" OnClick="SubmitButton_Click" style="margin-right: 5px" Width="147px" />
             <%--"OnClick" indicate the method to execute when button is clicked--%>
         </p>
-        <hr /
+        <hr />
     </form>
 
 
 
 
     <%--showing the result to the user--%>
-    <div>
-        <p>
-            <asp:Label ID="Result" runat="server"></asp:Label>
-        </p>
+    <p>
+        <asp:Label ID="Result" runat="server"></asp:Label>
+    </p>
 
-        <p>
+    <p>
         <asp:Label ID="UserInput" runat="server"></asp:Label>
         <%-- showing userName, entered in the text box--%>
         <asp:Label ID="Label1" runat="server"></asp:Label>
-            </p>
-    </div>
-
-   
+    </p>
 
 
     <p>
