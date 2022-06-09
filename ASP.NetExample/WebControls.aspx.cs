@@ -16,7 +16,7 @@ namespace ASP.NetExample
 
         protected void SubmitButton_Click(object sender, EventArgs e)
         {
-            Result.Text = "Rsult";
+            Result.Text = "Result";
             Result.ForeColor = System.Drawing.Color.CadetBlue;
             string tmp = "";
             if (RadioButton1.Checked == true) tmp = "Mr."; else tmp = "Ms.";

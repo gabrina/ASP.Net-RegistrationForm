@@ -4,10 +4,14 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="Layout.css" />
 </head>
 <body>
-    <h2 style="color: darkred">Registration Form</h2>
+    <div class="header">Registration Form</div>
     <hr />
     <form id="form1" runat="server">
         <div>
@@ -77,7 +81,7 @@
         <asp:HyperLink ID="MultipleFilesUploadLink" runat="server" NavigateUrl="UploadMultiplFiles.aspx">Need to upload more files?</asp:HyperLink>
 
         <p>
-            <asp:Button ID="SubmitButton" runat="server" Text="Submit" BackColor="#33cc33" OnClick="SubmitButton_Click" style="margin-right: 5px" Width="147px" />
+            <asp:Button ID="SubmitButton" class="w3-button w3-green w3-third" runat="server" Text="Submit" BackColor="#33cc33" OnClick="SubmitButton_Click" Style="margin-right: 5px" Width="147px" />
             <%--"OnClick" indicate the method to execute when button is clicked--%>
         </p>
         <hr />
@@ -87,28 +91,30 @@
 
 
     <%--showing the result to the user--%>
-    <p>
-        <asp:Label ID="Result" runat="server"></asp:Label>
-    </p>
+    <div class="footer">
+        <p>
+            <asp:Label ID="Result" runat="server"></asp:Label>
+        </p>
 
-    <p>
-        <asp:Label ID="UserInput" runat="server"></asp:Label>
-        <%-- showing userName, entered in the text box--%>
-        <asp:Label ID="Label1" runat="server"></asp:Label>
-    </p>
+        <p>
+            <asp:Label ID="UserInput" runat="server"></asp:Label>
+            <%-- showing userName, entered in the text box--%>
+            <asp:Label ID="Label1" runat="server"></asp:Label>
+        </p>
 
 
-    <p>
-        <asp:Label ID="ShowDate" runat="server"></asp:Label>
-    </p>
+        <p>
+            <asp:Label ID="ShowDate" runat="server"></asp:Label>
+        </p>
 
-    <p>
-        <asp:Label ID="ShowCourses" runat="server"></asp:Label>
-    </p>
+        <p>
+            <asp:Label ID="ShowCourses" runat="server"></asp:Label>
+        </p>
 
-    <%--File Upload Status--%>
-    <p>
-        <asp:Label ID="FileUploadStatus" runat="server"></asp:Label>
-    </p>
+        <%--File Upload Status--%>
+        <p>
+            <asp:Label ID="FileUploadStatus" runat="server"></asp:Label>
+        </p>
+    </div>
 </body>
 </html>
