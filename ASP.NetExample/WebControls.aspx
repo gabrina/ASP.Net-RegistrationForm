@@ -91,8 +91,20 @@
         </p>--%>
 
                 <asp:HyperLink ID="MultipleFilesUploadLink" runat="server" NavigateUrl="UploadMultiplFiles.aspx">Need to upload more files?</asp:HyperLink>
+                <hr />
+                <%--download trms and conditions--%>
+                <p>
+                    Click 
+                    <asp:LinkButton ID="DownloadTermsClicked" runat="server" OnClick="DownloadTerms">here</asp:LinkButton>
+                    to download terms and conditions
+                </p>
+                <p>
+                    <asp:Label ID="DownloadStatus" runat="server"></asp:Label>
+                </p>
             </div>
+            <%---------------------------------------------------------------------------------------------------------------------%>
         </div>
+        <%--end of the row--%>
         <p class="footer">
             <asp:Button ID="SubmitButton"
                 class="w3-button w3-green"
@@ -136,6 +148,8 @@
         <p>
             <asp:Label ID="FileUploadStatus" runat="server"></asp:Label>
         </p>
+
+
     </div>
 </body>
 </html>
