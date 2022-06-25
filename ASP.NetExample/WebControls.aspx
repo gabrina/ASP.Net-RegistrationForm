@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="Layout.css" />
 </head>
 <body>
@@ -18,7 +19,7 @@
 
             <%---------------------------------------------------------------------------------------------------------------------%>
             <%--column 1--%>
-            <div class="column">
+            <div class="col-4">
 
                 <%--get User's name--%>
                 <div>
@@ -59,7 +60,7 @@
             <%--column 2 --%>
             <%--get a date, using calndar--%>
 
-            <div class="column">
+            <div class="col-4">
                 <asp:Label ID="Label2" runat="server" Text="Enter Your Birthday:"></asp:Label>
                 <br />
                 <asp:Calendar ID="Calendar1" runat="server" SelectedDate="1998-09-23" BackColor="White" BorderColor="White" BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px" NextPrevFormat="FullMonth" Width="350px">
@@ -73,7 +74,7 @@
             </div>
             <%---------------------------------------------------------------------------------------------------------------------%>
             <%--column 3--%>
-            <div class="column">
+            <div class="col-4">
                 <%--fill upload--%>
                 <div>
                     <asp:Label ID="Label3" runat="server" Text="Add an image of you:"></asp:Label>
